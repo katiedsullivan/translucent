@@ -1,0 +1,233 @@
+/*
+Theme Name: Translucent v1.0
+Theme URI: http://www.katiesullivandesign.com/translucent_blog
+Author: Katie Sullivan
+Author URI: http://www.katiesullivandesign.com
+Description: Responsive blog theme. Customisable background image, background colour, Navigation menus and sidebars (custom page widget area and custom blog widget area).
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: translucent
+Tags: blog, right-sidebar, custom-background, custom-menu, two-columns
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+html,body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	font-size: 14px !important;
+	color: #333;
+}
+.bg-color {
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+a:link,
+a:visited {
+	color: #618477;
+	text-decoration: none;
+}
+a:hover {
+	color: #f0f0f0 !important;
+	text-decoration: none !important;
+}
+
+p {
+	line-height: 1.85em;
+}
+
+/* Header */
+.header-color {
+	height: 100%;
+	background: radial-gradient(circle, #c4e1d1, #ada0ba, #c4e1d1);
+	background-position: fixed;
+	/*
+	background-color: #f0f0f0; */
+	/*background: linear-gradient(270deg, #9800c9, #eb0000);*/
+	background-size: 300% 300%;
+	}
+header h1 {
+	margin-top: 0px;
+	font-family: Georgia, Times New Roman, serif !important;
+	font-size: 68px;
+	letter-spacing: 15px;
+	text-shadow: 1px 1px #c0c0c0;
+	margin-bottom: 100px;
+}
+header h2 {
+	font-family: Helvetica;
+	font-style: bold;
+	/* color: #1a3b2f; */
+	color: #c0c0c0;
+	font-size: 12px;
+	/* text-shadow: 1px 1px 5px #c0c0c0; */
+	text-transform: uppercase;
+}
+.site-header {
+	margin: 0 auto;
+	padding: 140px 0px 120px 0px;
+	text-align: center;
+}
+/* Nav */
+#nav {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	background: linear-gradient(#ffffff, #f0f0f0);
+	text-transform: lowercase;
+	opacity: 0.90;
+}
+#nav ul {
+		margin: auto;
+		padding: 0;
+	}
+#nav ul li li {
+	display: none;
+} 
+@media all and (min-width: 480px) {
+	#nav {
+		height: 50px;
+	}
+	#nav ul li {
+		display:inline-block;
+		float:none;
+		padding: 5px 50px 5px 50px;
+		list-style-type: none;
+		line-height: 40px;
+	}
+	#nav ul li:hover {
+		background-color: #ffffff;
+	}
+}
+@media all and (max-width: 480px) {
+	#nav {
+	text-align: center;
+	border-top: 1px dashed #f1f1f1;	
+	}
+	#nav ul {
+		margin: auto;
+		padding: 0;
+	}
+	#nav ul li {
+	padding: 4px 0px 4px 0px;
+	list-style-type: none;
+	line-height: 35px;
+	border-bottom: 1px solid #f0f0f0;
+	}
+	#nav ul li:hover {
+		background-color: #ffffff;
+	}
+}
+
+/* Blog */
+#blog {
+	padding: 20px 20px 20px 20px;
+}
+
+article.post {
+	padding: 20px 0px 20px 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ada0ba;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+.title {
+	padding: 0px 0px 5px 0px;
+}
+.timestamp {
+	font-style: italic;
+	font-size: 12px;
+	text-align: right;
+	padding: 0px 0px 20px 0px;
+}
+.sign {
+	font-size: 10px;
+}
+
+/* Sidebar */
+#sidebar {
+	padding: 20px 20px 20px 20px;
+	margin-top: 20px;
+}
+.chw-title {
+	font-size: 16px;
+}
+.hs-title {
+	font-size: 16px;
+}
+
+/* Footer */ 
+.site-footer {
+	margin: auto;
+	clear: both;
+	padding: 20px 0px 5px 0px;
+	background-color: #f9f9f9;
+	opacity: 0.8;
+	width: 100%;
+	text-align: center;
+	border-top: 1px dashed #f1f1f1;	
+}
+.footer-menu {
+	margin: auto;
+}
+.footer-menu ul li:first-of-type {
+}
+.footer-menu ul li {
+	padding: 5px 40px 5px 0px;
+	list-style-type: none;
+	line-height: 20px;
+}
+.footer-menu ul li ul {
+	display: none;
+}
+.footer-menu a:hover {
+	text-decoration: underline !important;
+}
+
+.site-footer p {
+	clear:both;
+}
+
+/* Widgets */
+/* Search widget */
+#searchform {
+	margin-bottom: 15px;
+}
+#searchform label {
+	display: none;
+}
+input#s{
+	max-width:200px;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+}
+input#searchsubmit {
+	color:#618477;
+	background:#c4e1d1;
+	border-radius: 5px;
+	margin: 5px 0px 5px 0px;
+	padding: 2px 10px 2px 10px;
+}
+input#searchsubmit:active {
+	background:#ada0ba;
+}
+
+/* calendar widget */
+.widget_calendar {float: left; }
+#wp-calendar {position: relative; max-width: 300px;}
+#wp-calendar caption { position: absolute; top:0; text-align: center; color: #333; font-size: 16px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-top: 40px; padding-bottom: 10px; text-align: center; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:3px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; padding-top: 10px;  padding-bottom: 30px;}
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px;  padding-bottom: 30px; }
